@@ -1,4 +1,4 @@
-From centos
+FROM centos
 
 MAINTAINER Sapna Radhakrishna "sapna.radhakrishna@calix.com"
 
@@ -13,7 +13,7 @@ RUN rm /usr/bin/python
 # python must be pointing to python3.6
 RUN ln -s /usr/bin/python3.6 /usr/bin/python
 
-COPY ./requirements.txt /requirements.txt
+COPY ./flask-service/requirements.txt /requirements.txt
 
 WORKDIR /
 
@@ -23,4 +23,4 @@ COPY . /
 
 ENTRYPOINT [ "python3.6" ]
 
-CMD ["service_uwsgi.py"]
+CMD ["flask-service/service_uwsgi.py"]
