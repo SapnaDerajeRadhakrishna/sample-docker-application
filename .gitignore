@@ -1,0 +1,14 @@
+.project
+.pydevproject
+*/*.log
+*/*.pyc
+*.pyc
+venv
+build/
+dist/
+.coverage
+*.whl
+*.bin
+.ebignore
+.elasticbeanstalk/
+
