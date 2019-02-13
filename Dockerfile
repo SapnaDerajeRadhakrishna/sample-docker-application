@@ -21,6 +21,8 @@ RUN pip3.6 install -r requirements.txt
 
 COPY . /
 
+EXPOSE 5000
+
 ENTRYPOINT [ "python3.6" ]
 
 CMD ["flask-service/service_uwsgi.py"]
