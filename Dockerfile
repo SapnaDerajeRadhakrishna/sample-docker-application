@@ -1,6 +1,6 @@
 FROM centos
 
-MAINTAINER Sapna Radhakrishna "sapna.radhakrishna@calix.com"
+MAINTAINER Sapna Radhakrishna "sapna.dr@gmail.com"
 
 RUN yum update -y \
 	 && yum install -y https://centos7.iuscommunity.org/ius-release.rpm \
